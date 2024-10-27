@@ -53,7 +53,7 @@ export default function About() {
           </div>
 
           <div data-aos="zoom-in-up" className='md-pic'>
-            <img src={inchrgePic} alt="Incharge" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFve64mucBbP5RO-9-Csji1Za-G7C1HfDRQA&s" alt="Incharge" />
             <p>Dost Muhammad <br /><span>Incharge</span></p>
           </div>
         </div>
