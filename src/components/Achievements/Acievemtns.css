@@ -1,0 +1,99 @@
+.achievement-body{
+
+    width: 100%;
+    /* background-color: #fff; */
+    margin-top: 200px;
+    padding-bottom: 5%;
+}
+
+
+.achievement-body h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+.grid-achievement-sml{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 30px;
+    width: 70%;
+    margin: auto;
+    margin: auto;
+    justify-content: center;
+    /* margin-top: 50px; */
+}
+
+
+.achvemet-card-sml{
+    background-color:var(--black);
+    border: 1px solid var(--golden);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    font-size:30px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.achvemet-card-sml span{
+    font-size: 60px;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 0px) and (max-width:300px) {
+    .grid-achievement-sml{
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+        gap: 30px;
+        width: 70%;
+        margin: auto;
+        margin: auto;
+        justify-content: center;
+        /* margin-top: 50px; */
+    }
+    
+    .achievement-body h1{
+        font-size: 30px;
+    }
+}
+
+
+
+
+@media (min-width: 301px) and (max-width:400px) {
+
+
+    .achievement-body h1{
+        font-size: 35px;
+    }
+
+    
+    .achvemet-card-sml span{
+        font-size: 50px;
+    }
+    
+    
+}
+
+
+@media (min-width: 400px) and (max-width:610px) {
+    /* Your styles for extra small devices */
+  
+}

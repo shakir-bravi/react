@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+nav{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 35%;
+    padding: 10px;
+    z-index: 20;
+}
+
+
+.mlogo{
+width: 15%;
+/* background:red; */
+}
+.mtext{
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    padding-right: 10px;
+    font-family: "Imperial Script", cursive;
+    border: 3px solid var(--golden);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none
+}
+
+
+.links{
+    width: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.Link{
+    background: none;
+    text-decoration: none;
+    font-size: 30px;
+    border-top: 1px solid var(--golden) ;
+    border-bottom: 4px solid var(--golden) ;
+    border-left: 1px solid var(--golden) ;
+    border-right: 1px solid var(--golden) ;
+    border-radius: 30px;
+    padding: 5px 10px;
+    transition: all .1s;
+}
+
+.Link:hover{
+    border-top: 5px solid var(--golden) ;
+    border-bottom: 1px solid var(--golden) ;
+
+
+}
+
+
+
+.fixed-nav{
+
+    height: 100vh;
+    width:50%;
+    min-width: 200px ;
+    background-color: var(--black);
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    z-index: 3;
+    transition: all .3s linear;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px 5px;
+}
+
+.fixed-nav-clz{
+    height: 100vh;
+    width: 300px;
+    min-width: 50%;
+    background-color: var(--black);
+    position: fixed;
+    left: -300%;
+    top: 0%;
+    transition: all .3s linear;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px 5px;
+
+}
+
+.Fixex-Link{
+
+text-decoration: underline  solid var(--golden);
+margin-top: 20px;
+font-size: 30px;
+text-underline-offset: 6px ;
+}
+
+
+@media (min-width: 0px) and (max-width:400px) {
+
+    nav{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 70%;
+        padding: 10px;
+    }
+    
+    .mtext{
+        height: 65px;
+        width: 65px;
+        font-size: 30px;
+        padding-right: 10px;
+    
+    }
+    .home-body{
+        background-color: orange;
+    }
+    .Link{
+        display: none;
+    }
+  
+
+    .sml-links{
+        display: flex;
+        font-size: 25px;
+            }
+        
+
+
+  }
+
+
+@media (min-width: 400px) and (max-width:610px) {
+
+    /* Your styles for extra small devices */
+    /* .fixed-nav{
+        display: none;
+    } */
+  
+    .mtext{
+        height: 80px;
+        width: 80px;
+        font-size: 40px;
+        padding-right: 10px;
+    
+    }
+    .Link{
+        display: none;
+    }
+  
+    .sml-links{
+        display: flex;
+        font-size: 35px;
+            }
+            .links{
+                width: 50%;
+                text-decoration: none;
+                display: flex;
+                justify-content:end;
+                align-items: center;
+                /* background: red; */
+                padding-right: 30px;
+            
+            }
+        
+  }
+  
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 611px) and (max-width: 767.98px) {
+    /* Your styles for small devices */
+    .mtext{
+        height: 90px;
+        width: 90px;
+        font-size: 45px;
+        padding-right: 10px;
+    
+    }
+    .links{
+        width: 50%;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+
+    .Link{
+        background: none;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 3px 8px;
+        transition: all .1s;
+    }
+    
+    .sml-links{
+        display:none;
+            }
+         
+  
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Your styles for medium devices */
+  
+    .fixed-nav{
+        display: none;
+    }
+    .sml-links{
+        display:none;
+            }
+    
+            
+
+            
+    }
+  
+    
+  
+  
+  
+    
+  
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /* Your styles for large devices */
+  
+    .fixed-nav{
+        display: none;
+    }
+    .sml-links{
+        display:none;
+            }
+         
+    
+    }
+   
+  
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+
+    /* Your styles for extra large devices */
+    .fixed-nav{
+        display: none;
+    }
+    .sml-links{
+        display:none;
+            }
+         
+  }
+  
+  /* Ultra large devices (extra large desktops, 1400px and up) */
+  @media (min-width: 1400px) {
+
+    /* Your styles for ultra large devices */
+    .fixed-nav{
+        display: none;
+    }
+    .sml-links{
+        display:none;
+            }
+         
+  }
+
+
+

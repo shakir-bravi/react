@@ -1,0 +1,203 @@
+
+.faq-body{
+    
+    /* height: 150vh; */
+    width: 100%;
+    margin-top: 30px;
+    background-color:var(--red-bg) ;
+}
+
+.faq-body h1{
+    font-size: 60px;
+}
+
+.faq{
+    width: 60%;
+    margin: auto;
+    /* height: 400px; */
+    /* background-color: red; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: var(--black); */
+}
+
+.faq-QandA{
+    background-color: var(--black);
+    padding: 10px;
+    border: 1px solid var(--golden);
+    border-radius: 10px;
+}
+
+.Faq-Q{
+
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.showAns{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: justify;
+    display: block;
+    /* height: 70px; */
+    /* background-color: red; */
+    animation:  showAns .4s ;
+}
+
+@keyframes showAns {
+    0%{
+        /* height: 0px; */
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+    
+}
+
+
+.clzAns { 
+    font-size: 20px;
+    text-transform : capitalize;
+    color : rgba(255, 255, 255, 0.8);
+    text-align : justify;
+    display : none;
+}
+
+
+@media (min-width: 0px) and (max-width:350px) {
+    .faq-body h1{
+        font-size: 35px;
+    }
+    .faq{
+        width: 95%;
+    }
+
+    .faq-QandA{
+        padding: 5px;
+    }
+
+    .Faq-Q{
+        font-size: 13px;
+
+    }
+.showAns{
+    font-size: 12px;
+}
+
+  }
+
+
+@media (min-width: 350px) and (max-width:500px) {
+    .faq-body h1{
+        font-size: 40px;
+    }
+    .faq{
+        width: 95%;
+    }
+
+    .faq-QandA{
+        padding: 5px;
+    }
+
+    .Faq-Q{
+        font-size: 15px;
+
+    }
+.showAns{
+    font-size: 15px;
+}
+
+  }
+
+
+@media (min-width: 500px) and (max-width:610px) {
+    /* Your styles for extra small devices */
+    .faq-body h1{
+        font-size: 40px;
+    }
+    .faq{
+        width: 85%;
+    }
+
+    .faq-QandA{
+        padding: 5px;
+    }
+
+    .Faq-Q{
+        font-size: 15px;
+
+    }
+.showAns{
+    font-size: 15px;
+}
+  
+  }
+  
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 611px) and (max-width: 900.98px) {
+    /* Your styles for small devices */
+    .faq-body h1{
+        font-size: 45px;
+    }
+    .faq{
+        width: 75%;
+    }
+
+    .faq-QandA{
+        padding: 8px;
+    }
+
+    .Faq-Q{
+        font-size: 16px;
+
+    }
+.showAns{
+    font-size: 16px;
+}
+  
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    /* Your styles for medium devices */
+  
+    }
+  
+    
+  
+  
+  
+    
+  
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Your styles for large devices */
+  
+  
+    
+    }
+   
+  
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* Your styles for extra large devices */
+  }
+  
+  /* Ultra large devices (extra large desktops, 1400px and up) */
+  @media (min-width: 1400px) {
+    /* Your styles for ultra large devices */
+  }
+
+
+

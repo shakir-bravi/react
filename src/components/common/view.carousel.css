@@ -1,0 +1,177 @@
+.view-carousel-body{
+    height: 100vh;
+    width: 100%;
+    margin-top: 20vh;
+}
+.view-carousel-body  h1{
+    font-size: 50px;
+    padding: 30px 5px;
+}
+
+.carousel{
+    height: 70%;
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    object-fit: fill;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all .3s;
+}
+.carousel  img{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel:hover .left-img{
+    display: flex;
+
+}
+
+.carousel:hover .right-img{
+display: flex;
+}
+
+
+.left-img{
+
+height: 100%;
+width: 100px;
+/* background-color: #331f1f; */
+position: absolute;
+left: 0;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 60px;
+color: var(--golden);
+display: none;
+
+
+}
+
+
+.left-img div{
+
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 100%;
+animation:  _left .3s;
+cursor: pointer;
+
+}
+
+.left-img i{
+color: var(--golden);
+}
+
+.right-img{
+    height: 100%;
+    width: 100px;
+    /* background-color: #151313; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+justify-content: center;
+align-items: center;
+font-size: 60px;
+display: none;
+}
+
+.right-img div{
+
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 100%;
+cursor: pointer;
+animation:  _right .3s;
+
+}
+
+
+
+.right-img i{
+    color: var(--golden);
+}
+
+@keyframes _right {
+    0%{
+        position: relative;
+        left: 20px;
+        opacity: 0;
+    }
+    100%{
+        position:relative;
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes _left {
+    0%{
+        position: relative;
+        right: 20px;
+        opacity: 0;
+    }
+    100%{
+        position:relative;
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+@media (min-width: 0px) and (max-width:450px) {
+    .carousel{
+        height: 70%;
+        width: 95%;
+    }
+    
+.left-img{
+
+    height: 100%;
+    width: 50px;
+    font-size: 35px;
+
+}
+
+.right-img{
+    height: 100%;
+    width: 50px;
+    font-size: 35px;
+}
+
+.left-img div{
+
+    height: 43px;
+    width: 43px;
+
+}
+
+.right-img div{
+    height: 43px;
+    width: 43px;
+}
+
+
+
+.view-carousel-body  h1{
+    font-size: 40px;
+    padding: 30px 5px;
+}
+  }
